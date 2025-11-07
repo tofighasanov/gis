@@ -1,0 +1,208 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="wizard-container">
+    <div class="stepper-wrapper">
+        <div id="stepper"></div>
+
+        <div id="step-content" class="mt-4">
+            <div id="step1" class="step-pane">
+                <h4>🛒 Overview</h4>
+                <p>Set up basic information for your service.</p>
+                <input id="svcName" type="text" class="form-control" placeholder="Service name" required />
+            </div>
+
+            <div id="step2" class="step-pane d-none">
+                <h4>📦 Deliverables</h4>
+                <p>Define what you will deliver to the client.</p>
+                <textarea id="deliverables" class="form-control" rows="4" placeholder="Describe deliverables..." required></textarea>
+            </div>
+
+            <div id="step3" class="step-pane d-none">
+                <h4>💳 Pricing</h4>
+                <p>Enter the price and project duration.</p>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <input id="price" type="number" min="0" class="form-control" placeholder="$1000" required />
+                    </div>
+                    <div class="col-sm-6">
+                        <input id="duration" type="number" min="1" class="form-control" placeholder="Duration (days)" required />
+                    </div>
+                </div>
+            </div>
+
+            <div id="step4" class="step-pane d-none">
+                <h4>🗓️ Schedule</h4>
+                <p>Select an expected start date.</p>
+                <input id="startDate" type="date" class="form-control" required />
+            </div>
+
+            <div id="step5" class="step-pane d-none">
+                <h4>✅ Confirmation</h4>
+                <p>Review your information before submission.</p>
+                <ul class="list-group mb-3" id="summary"></ul>
+                <button class="btn btn-success w-100" id="finishBtn">Finish & Submit</button>
+            </div>
+        </div>
+
+        <div class="step-buttons mt-4 text-center">
+            <button id="prevBtn" class="btn btn-outline-secondary">Back</button>
+            <button id="nextBtn" class="btn btn-primary">Next</button>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // 1) Инициализируем Stepper (5 шагов)
+        var stepper = new ej.navigations.Stepper({
+            steps: [
+                { label: 'Overview',     iconCss: 'e-icons e-home' },
+                { label: 'Deliverables', iconCss: 'e-icons e-briefcase' },
+                { label: 'Pricing',      iconCss: 'e-icons e-currency-dollar' },
+                { label: 'Schedule',     iconCss: 'e-icons e-calendar' },
+                { label: 'Confirm',      iconCss: 'e-icons e-check' }
+            ],
+            activeStep: 0
+        });
+        stepper.appendTo('#stepper');
+
+        // 2) Управление шагами
+        const panes = [
+            document.getElementById('step1'),
+            document.getElementById('step2'),
+            document.getElementById('step3'),
+            document.getElementById('step4'),
+            document.getElementById('step5')
+        ];
+        let current = 0;
+
+        function showStep(i) {
+            panes.forEach((p, idx) => p.classList.toggle('d-none', idx !== i));
+            stepper.activeStep = i;
+            document.getElementById('prevBtn').disabled = i === 0;
+            document.getElementById('nextBtn').classList.toggle('d-none', i === panes.length - 1);
+        }
+
+        // 3) Валидация для текущего шага (минимальная, без форм)
+        function validateStep(i) {
+            const required = panes[i].querySelectorAll('[required]');
+            for (const el of required) {
+                const valid = el.type === 'number' ? el.value !== '' && !isNaN(+el.value) : !!el.value;
+                el.classList.toggle('is-invalid', !valid);
+                if (!valid) return false;
+            }
+            return true;
+        }
+
+        // 4) Кнопки
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            if (!validateStep(current)) return;
+            current = Math.min(panes.length - 1, current + 1);
+            if (current === panes.length - 1) buildSummary();
+            showStep(current);
+        });
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            current = Math.max(0, current - 1);
+            showStep(current);
+        });
+
+        // 5) Переход по клику на шаг в степпере
+        document.getElementById('stepper').addEventListener('click', (e) => {
+            const items = Array.from(document.querySelectorAll('.e-step'));
+            const idx = items.indexOf(e.target.closest('.e-step'));
+            if (idx < 0) return;
+            // Не даём перепрыгнуть через незаполненные шаги
+            if (idx > current && !validateStep(current)) return;
+            current = idx;
+            if (current === panes.length - 1) buildSummary();
+            showStep(current);
+        });
+
+        // 6) "Отправка"
+        document.getElementById('finishBtn').addEventListener('click', function () {
+            // здесь делай fetch/post на свой экшен, сейчас просто уведомление
+            alert('Submitted');
+        });
+
+        // 7) Сводка
+        function buildSummary() {
+            const summary = document.getElementById('summary');
+            summary.innerHTML = '';
+            const rows = [
+                ['Service name',  document.getElementById('svcName').value || '—'],
+                ['Deliverables',  document.getElementById('deliverables').value || '—'],
+                ['Price',         document.getElementById('price').value ? ('$' + document.getElementById('price').value) : '—'],
+                ['Duration',      document.getElementById('duration').value ? (document.getElementById('duration').value + ' days') : '—'],
+                ['Start date',    document.getElementById('startDate').value || '—']
+            ];
+            rows.forEach(([k, v]) => {
+                const li = document.createElement('li');
+                li.className = 'list-group-item d-flex justify-content-between';
+                li.innerHTML = `<span>${k}</span><strong>${v}</strong>`;
+                summary.appendChild(li);
+            });
+        }
+
+        // старт
+        showStep(current);
+    </script>
+}
+
+<style>
+    body {
+        background-color: #f5f6f8;
+        font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    .wizard-container {
+        max-width: 900px;
+        margin: 48px auto;
+        background: #fff;
+        border-radius: 16px;
+        padding: 32px 36px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+
+    .e-stepper {
+        background: transparent;
+        border: none;
+    }
+
+    .e-step {
+        font-weight: 500;
+        transition: color .25s ease;
+    }
+
+        .e-step.e-step-active {
+            color: #0d6efd !important;
+        }
+
+    .step-pane {
+        padding: 20px;
+        background: #f8f9fa;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+    }
+
+    .form-control, .form-select {
+        border-radius: 10px;
+        padding: 10px 14px;
+    }
+
+    .btn {
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+
+    .step-buttons button {
+        width: 140px;
+        margin: 0 8px;
+    }
+
+    .is-invalid {
+        border-color: #dc3545 !important;
+    }
+</style>

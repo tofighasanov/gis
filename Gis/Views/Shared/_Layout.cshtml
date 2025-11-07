@@ -1,0 +1,85 @@
+﻿@using Syncfusion.EJ2.Navigations;
+@{
+    var menuItems = new List<MenuItem> {
+        new MenuItem { Text = "Home", Url = "/" },
+        new MenuItem { Text = "Map", Url = "/Map" },
+        new MenuItem { Text = "Dashboard", Url = "/Dashboard" },
+        new MenuItem { Text = "Reports", Url = "/Reports" },
+        new MenuItem { Text = "Services", Url = "/Services" },
+        new MenuItem { Text = "Settings", Url = "/Settings" }
+    };
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Gis</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Gis.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/31.2.2/fluent.css" />
+</head>
+<body>
+    <!-- 🔹 Top Navbar -->
+    <header class="navbar navbar-expand-sm navbar-light bg-white border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">Gis</a>
+            <button class="navbar-toggler" id="toggleSidebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 🔹 Sidebar + Main layout -->
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <ejs-sidebar id="sidebarMenu" target=".main-content" type="Push" showBackdrop="true" width="250px" mediaQuery="(min-width: 768px)">
+            <e-content-template>
+                <ejs-menu id="sideMenu" items="menuItems" orientation="Vertical"></ejs-menu>
+            </e-content-template>
+        </ejs-sidebar>
+
+        <!-- Main page content -->
+        <div class="main-content flex-fill p-3">
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- 🔹 Footer -->
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - Gis - <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <!-- 🔹 Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.syncfusion.com/ej2/31.2.2/dist/ej2.min.js"></script>
+
+    @Html.EJS().ScriptManager()  @* <-- ЭТО ДОЛЖНО ИДТИ РАНЬШЕ твоего JS *@
+
+    <script>
+        window.addEventListener('load', function () {
+          var host = document.getElementById('sidebarMenu');
+          if (!host || !host.ej2_instances || !host.ej2_instances[0]) {
+            console.warn('Sidebar instance not found');
+            return;
+          }
+          var sidebar = host.ej2_instances[0];
+          document.getElementById('toggleSidebar').addEventListener('click', function () {
+            sidebar.toggle();
+          });
+        });
+    </script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
