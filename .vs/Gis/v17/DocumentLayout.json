@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|d:\\sunrise\\backup pr\\gis-06.11.25-2\\gis\\gis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|solutionrelative:gis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|d:\\sunrise\\backup pr\\gis-06.11.25-2\\gis\\gis\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|solutionrelative:gis\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|d:\\sunrise\\backup pr\\gis-06.11.25-2\\gis\\gis\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|solutionrelative:gis\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|d:\\sunrise\\backup pr\\gis-06.11.25-2\\gis\\gis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|solutionrelative:gis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|d:\\sunrise\\backup pr\\gis-06.11.25-2\\gis\\gis\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|solutionrelative:gis\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|d:\\sunrise\\backup pr\\gis-06.11.25-2\\gis\\gis\\wwwroot\\css\\icons.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|solutionrelative:gis\\wwwroot\\css\\icons.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|d:\\sunrise\\backup pr\\gis-06.11.25-2\\gis\\gis\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|solutionrelative:gis\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EA9FE6C-501F-429F-9456-BF07D0839BB4}|Gis\\Gis.csproj|d:\\sunrise\\backup pr\\gis-06.11.25-2\\gis\\gis\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -90,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -110,7 +114,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "icons.min.css",
+              "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\wwwroot\\css\\icons.min.css",
+              "RelativeDocumentMoniker": "Gis\\wwwroot\\css\\icons.min.css",
+              "ToolTip": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\wwwroot\\css\\icons.min.css",
+              "RelativeToolTip": "Gis\\wwwroot\\css\\icons.min.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-13T13:02:17.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "site.css",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Gis\\wwwroot\\css\\site.css",
@@ -122,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Gis\\Views\\Home\\Privacy.cshtml",
@@ -134,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "bootstrap.css",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
               "RelativeDocumentMoniker": "Gis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -146,19 +163,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "app.css",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\wwwroot\\css\\app.css",
               "RelativeDocumentMoniker": "Gis\\wwwroot\\css\\app.css",
               "ToolTip": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\wwwroot\\css\\app.css",
               "RelativeToolTip": "Gis\\wwwroot\\css\\app.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwRAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEYDAAAAAAAAAAApwFkDAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-07T10:44:02.9Z"
+              "WhenOpened": "2025-11-07T10:44:02.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "SettingsController.cs",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Controllers\\SettingsController.cs",
               "RelativeDocumentMoniker": "Gis\\Controllers\\SettingsController.cs",
@@ -170,20 +188,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Gis\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Gis\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-06T12:45:12.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Gis\\Views\\Dashboard\\Index.cshtml",
@@ -195,7 +213,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Gis\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Gis\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAJsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T12:47:30.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "ServicesController.cs",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Controllers\\ServicesController.cs",
               "RelativeDocumentMoniker": "Gis\\Controllers\\ServicesController.cs",
@@ -207,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Gis\\Views\\_ViewImports.cshtml",
@@ -219,19 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Gis\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Gis\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-06T12:47:30.031Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Gis\\Controllers\\DashboardController.cs",
@@ -243,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Gis\\Controllers\\HomeController.cs",
@@ -255,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Program.cs",
               "RelativeDocumentMoniker": "Gis\\Program.cs",
@@ -267,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Map\\Index.cshtml",
               "RelativeDocumentMoniker": "Gis\\Views\\Map\\Index.cshtml",
@@ -279,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Reports\\Index.cshtml",
               "RelativeDocumentMoniker": "Gis\\Views\\Reports\\Index.cshtml",
@@ -291,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Services\\Index.cshtml",
               "RelativeDocumentMoniker": "Gis\\Views\\Services\\Index.cshtml",
@@ -303,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Views\\Settings\\Index.cshtml",
               "RelativeDocumentMoniker": "Gis\\Views\\Settings\\Index.cshtml",
@@ -315,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ReportsController.cs",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Controllers\\ReportsController.cs",
               "RelativeDocumentMoniker": "Gis\\Controllers\\ReportsController.cs",
@@ -327,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MapController.cs",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Controllers\\MapController.cs",
               "RelativeDocumentMoniker": "Gis\\Controllers\\MapController.cs",
@@ -339,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Customer.cs",
               "DocumentMoniker": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Gis\\Models\\Customer.cs",

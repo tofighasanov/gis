@@ -1,4 +1,4 @@
-wwwroot\css\app.css
+wwwroot\css\all.min.css
 wwwroot\css\bootstrap.min.css
 wwwroot\css\icons.min.css
 wwwroot\css\site.css
@@ -2237,3 +2237,8 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\webfonts\fa-brands-400.woff2
+wwwroot\webfonts\fa-regular-400.woff2
+wwwroot\webfonts\fa-solid-900.woff2
+wwwroot\webfonts\fa-v4compatibility.woff2
+wwwroot\css\app.css

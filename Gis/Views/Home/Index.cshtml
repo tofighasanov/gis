@@ -8,47 +8,47 @@
 
         <div id="step-content" class="mt-4">
             <div id="step1" class="step-pane">
-                <h4>🛒 Overview</h4>
-                <p>Set up basic information for your service.</p>
-                <input id="svcName" type="text" class="form-control" placeholder="Service name" required />
+                <h4>🛒 Xəritə info</h4>
+                <p>Servisiniz haqda məlumat</p>
+                <input id="svcName" type="text" class="form-control" placeholder="Servisin adı" required />
             </div>
 
             <div id="step2" class="step-pane d-none">
-                <h4>📦 Deliverables</h4>
-                <p>Define what you will deliver to the client.</p>
-                <textarea id="deliverables" class="form-control" rows="4" placeholder="Describe deliverables..." required></textarea>
+                <h4>📦 Ətraflı məlumat</h4>
+                <p>Ərazi haqda məlumat.</p>
+                <textarea id="deliverables" class="form-control" rows="4" placeholder="Ərazi haqda yazın" required></textarea>
             </div>
 
             <div id="step3" class="step-pane d-none">
-                <h4>💳 Pricing</h4>
-                <p>Enter the price and project duration.</p>
+                <h4>💳 Qiyməti</h4>
+                <p>Qiymət və catdirilma müddəti</p>
                 <div class="row g-3">
                     <div class="col-sm-6">
                         <input id="price" type="number" min="0" class="form-control" placeholder="$1000" required />
                     </div>
                     <div class="col-sm-6">
-                        <input id="duration" type="number" min="1" class="form-control" placeholder="Duration (days)" required />
+                        <input id="duration" type="number" min="1" class="form-control" placeholder="Müddət (gün)" required />
                     </div>
                 </div>
             </div>
 
             <div id="step4" class="step-pane d-none">
-                <h4>🗓️ Schedule</h4>
-                <p>Select an expected start date.</p>
+                <h4>🗓️ Tarix</h4>
+                <p>Çatdirilma darixi</p>
                 <input id="startDate" type="date" class="form-control" required />
             </div>
 
             <div id="step5" class="step-pane d-none">
-                <h4>✅ Confirmation</h4>
-                <p>Review your information before submission.</p>
+                <h4>✅ Təstiq edin</h4>
+                <p>Məlumatları yoxlayın</p>
                 <ul class="list-group mb-3" id="summary"></ul>
-                <button class="btn btn-success w-100" id="finishBtn">Finish & Submit</button>
+                <button class="btn btn-success w-100" id="finishBtn">Bitir & Təstiqlə</button>
             </div>
         </div>
 
         <div class="step-buttons mt-4 text-center">
-            <button id="prevBtn" class="btn btn-outline-secondary">Back</button>
-            <button id="nextBtn" class="btn btn-primary">Next</button>
+            <button id="prevBtn" class="btn btn-outline-secondary">Geri</button>
+            <button id="nextBtn" class="btn btn-primary">Növbəti</button>
         </div>
     </div>
 </div>
@@ -58,11 +58,11 @@
         // 1) Инициализируем Stepper (5 шагов)
         var stepper = new ej.navigations.Stepper({
             steps: [
-                { label: 'Overview',     iconCss: 'e-icons e-home' },
-                { label: 'Deliverables', iconCss: 'e-icons e-briefcase' },
-                { label: 'Pricing',      iconCss: 'e-icons e-currency-dollar' },
-                { label: 'Schedule',     iconCss: 'e-icons e-calendar' },
-                { label: 'Confirm',      iconCss: 'e-icons e-check' }
+                { label: 'İnfo',     iconCss: 'e-icons e-home' },
+                { label: 'Ətraflı məlumat', iconCss: 'bi iconoir-view-360' },
+                { label: 'Qiymət',      iconCss: 'fa-solid fa-gears' },
+                { label: 'Tarix',     iconCss: 'e-icons e-calendar' },
+                { label: 'Təstiq et',      iconCss: 'e-icons e-check' }
             ],
             activeStep: 0
         });
@@ -124,7 +124,7 @@
         // 6) "Отправка"
         document.getElementById('finishBtn').addEventListener('click', function () {
             // здесь делай fetch/post на свой экшен, сейчас просто уведомление
-            alert('Submitted');
+            alert('Təsdiqləndi');
         });
 
         // 7) Сводка
@@ -132,11 +132,11 @@
             const summary = document.getElementById('summary');
             summary.innerHTML = '';
             const rows = [
-                ['Service name',  document.getElementById('svcName').value || '—'],
-                ['Deliverables',  document.getElementById('deliverables').value || '—'],
-                ['Price',         document.getElementById('price').value ? ('$' + document.getElementById('price').value) : '—'],
-                ['Duration',      document.getElementById('duration').value ? (document.getElementById('duration').value + ' days') : '—'],
-                ['Start date',    document.getElementById('startDate').value || '—']
+                ['İnfo',  document.getElementById('svcName').value || '—'],
+                ['Ətraflı məlumat',  document.getElementById('deliverables').value || '—'],
+                ['Qiymət',         document.getElementById('price').value ? ('$' + document.getElementById('price').value) : '—'],
+                ['Tarix',      document.getElementById('duration').value ? (document.getElementById('duration').value + ' days') : '—'],
+                ['Təstiq et',    document.getElementById('startDate').value || '—']
             ];
             rows.forEach(([k, v]) => {
                 const li = document.createElement('li');
@@ -153,7 +153,7 @@
 
 <style>
     body {
-        background-color: #f5f6f8;
+        background-color: #ffffff;
         font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     }
 
@@ -172,7 +172,6 @@
     }
 
     .e-step {
-        font-weight: 500;
         transition: color .25s ease;
     }
 

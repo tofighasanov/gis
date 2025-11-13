@@ -853,25 +853,25 @@ input.add-file-input {
   font-size: 36px;
 }
 :root {
-  --bs-topbar-height: 52px;
-  --bs-topbar-bg: #fff;
-  --bs-topbar-b-border-color: #f8f9fb;
-  --bs-topbar-nav-icon-bg: #fff;
-  --bs-topbar-nav-icon-color: #424d65;
-  --bs-startbar-width: 230px;
-  --bs-startbar-collapsed-width: 70px;
-  --bs-startbar-bg: #f8f9fb;
-  --bs-startbar-e-border-color: #dee2e6;
-  --bs-menu-icon-color: #45484e;
-  --bs-menu-link-color: #4a505e;
-  --bs-nav-link-disc-color: #8997bd;
-  --bs-menu-label-color: #a0a5b3;
-  --bs-label-color: #656d9a;
-  --bs-text-muted: var(--bs-secondary-color);
-  --bs-box-shadow-sm: 0 0 2px 2px rgba(61, 71, 81, 0.05);
-  --bs-card-bg: var(--bs-secondary-bg);
-  --bs-theme-white-color: #ffffff;
-  --bs-border-secondary: #95a0c5;
+    --bs-topbar-height: 52px;
+    --bs-topbar-bg: #fff;
+    --bs-topbar-b-border-color: #f8f9fb;
+    --bs-topbar-nav-icon-bg: #fff;
+    --bs-topbar-nav-icon-color: #424d65;
+    --bs-startbar-width: 230px;
+    --bs-startbar-collapsed-width: 70px;
+    --bs-startbar-bg: #e6eeff;
+    --bs-startbar-e-border-color: #dee2e6;
+    --bs-menu-icon-color: #45484e;
+    --bs-menu-link-color: #4a505e;
+    --bs-nav-link-disc-color: #8997bd;
+    --bs-menu-label-color: #a0a5b3;
+    --bs-label-color: #656d9a;
+    --bs-text-muted: var(--bs-secondary-color);
+    --bs-box-shadow-sm: 0 0 2px 2px rgba(61, 71, 81, 0.05);
+    --bs-card-bg: var(--bs-secondary-bg);
+    --bs-theme-white-color: #ffffff;
+    --bs-border-secondary: #95a0c5;
 }
 html[data-bs-theme="dark"] {
   --bs-light: #1e222d;
