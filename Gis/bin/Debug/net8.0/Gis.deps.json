@@ -1,0 +1,76 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Gis/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.4",
+          "Syncfusion.EJ2.AspNet.Core": "31.2.2"
+        },
+        "runtime": {
+          "Gis.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.4": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.4.30916"
+          }
+        }
+      },
+      "Syncfusion.EJ2.AspNet.Core/31.2.2": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.4",
+          "Syncfusion.Licensing": "31.2.2"
+        },
+        "runtime": {
+          "lib/net8.0/Syncfusion.EJ2.dll": {
+            "assemblyVersion": "31.2.2.0",
+            "fileVersion": "31.2.2.0"
+          }
+        }
+      },
+      "Syncfusion.Licensing/31.2.2": {
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "31.2.2.0",
+            "fileVersion": "31.2.2.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Gis/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/13.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pdgNNMai3zv51W5aq268sujXUyx7SNdE2bj1wZcWjAQrKMFZV260lbqYop1d2GM67JI1huLRwxo9ZqnfF/lC6A==",
+      "path": "newtonsoft.json/13.0.4",
+      "hashPath": "newtonsoft.json.13.0.4.nupkg.sha512"
+    },
+    "Syncfusion.EJ2.AspNet.Core/31.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EyeCAfKOxItkdGADa2JZOC17GmqDYP82HJ7QOdlXsChJ1FyRQJO6XO+KhBx6+KFuyCkrIlHJi3kxWQWHX/5h9A==",
+      "path": "syncfusion.ej2.aspnet.core/31.2.2",
+      "hashPath": "syncfusion.ej2.aspnet.core.31.2.2.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/31.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dqKEmKcieBZQnFW30LpI2W1711kQK62s08O6RlYZCvp0W+rGHB0CkS1rxP4Yep9Bc9x96Am0dDRXhdSk3f+juQ==",
+      "path": "syncfusion.licensing/31.2.2",
+      "hashPath": "syncfusion.licensing.31.2.2.nupkg.sha512"
+    }
+  }
+}

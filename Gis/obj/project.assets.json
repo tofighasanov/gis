@@ -132,11 +132,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-1\\Gis\\Gis\\Gis.csproj",
+      "projectUniqueName": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Gis.csproj",
       "projectName": "Gis",
-      "projectPath": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-1\\Gis\\Gis\\Gis.csproj",
+      "projectPath": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\Gis.csproj",
       "packagesPath": "C:\\Users\\Администратор\\.nuget\\packages\\",
-      "outputPath": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-1\\Gis\\Gis\\obj\\",
+      "outputPath": "D:\\SUNRISE\\Backup PR\\Gis-06.11.25-2\\Gis\\Gis\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
