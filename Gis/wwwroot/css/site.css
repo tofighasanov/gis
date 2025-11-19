@@ -1,0 +1,25 @@
+.e-stepper .e-step-selected .e-indicator
+
+{
+    background: #1c5ad1 !important;
+}
+
+.e-stepper:not(.e-steps-focus) .e-step-selected .e-step {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #1c5ad1, 0 0 0 8px #fff !important;
+}
+
+.e-stepper .e-step-valid .e-indicator {
+    background: #1c5ad1 !important;
+    color: #fff
+}
+
+.e-stepper .e-step-completed .e-step, .e-stepper .e-step-inprogress .e-step, .e-stepper .e-step-completed .e-indicator, .e-stepper .e-step-inprogress .e-indicator, .e-stepper .e-step-completed .e-step-indicator, .e-stepper .e-step-inprogress .e-step-indicator {
+    background: #1c5ad1 !important;
+    color: #fff
+}
+
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #100acd !important;
+    border-color: #100acd !important;
+}

@@ -1,8 +1,7 @@
 wwwroot\css\all.min.css
+wwwroot\css\app.css
 wwwroot\css\bootstrap.min.css
 wwwroot\css\icons.min.css
-wwwroot\css\site.css
-wwwroot\favicon.ico
 wwwroot\fonts\fa-brands-400.ttf
 wwwroot\fonts\fa-brands-400.woff2
 wwwroot\fonts\fa-regular-400.ttf
@@ -2241,4 +2240,4 @@ wwwroot\webfonts\fa-brands-400.woff2
 wwwroot\webfonts\fa-regular-400.woff2
 wwwroot\webfonts\fa-solid-900.woff2
 wwwroot\webfonts\fa-v4compatibility.woff2
-wwwroot\css\app.css
+wwwroot\css\site.css

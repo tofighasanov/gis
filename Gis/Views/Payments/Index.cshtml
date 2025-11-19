@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Ödənişlər";
+}
+
+<div class="container-fluid">
+    <h1 class="h3 mb-3">Ödənişlər</h1>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-sm table-hover align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tarix</th>
+                            <th>Ödəyici</th>
+                            <th>Məbləq</th>
+                            <th>Status</th>
+                            <th class="text-end">Əməlliyat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1001</td>
+                            <td>2025-11-10</td>
+                            <td>Aysel Məmmədova</td>
+                            <td>120 AZN</td>
+                            <td><span class="badge bg-success">Ugurlu</span></td>
+                            <td class="text-end">
+                                <button class="btn btn-sm btn-outline-primary">Ətraflı</button>
+                                <button class="btn btn-sm btn-outline-danger">Geri ödəniş</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1002</td>
+                            <td>2025-11-12</td>
+                            <td>Rauf Həsənov</td>
+                            <td>80 AZN</td>
+                            <td><span class="badge bg-warning text-dark">Gözləyir</span></td>
+                            <td class="text-end">
+                                <button class="btn btn-sm btn-outline-primary">Ətraflı</button>
+                                <button class="btn btn-sm btn-outline-secondary">Ləgv etmək</button>
+                            </td>
+                        </tr>
+                        <!-- позже заменим на реальную загрузку из БД -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1608,24 +1608,24 @@ hr.hr-dashed {
 .startbar .startbar-menu .navbar-nav .menu-label small {
   display: none;
 }
-.startbar .startbar-menu .navbar-nav .nav-item.active .nav-link.active {
-  color: #6f6af8;
-}
-.startbar
-  .startbar-menu
-  .navbar-nav
-  .nav-item.active
-  .nav-link.active
-  .menu-icon {
-  color: #6f6af8;
-}
+    .startbar .startbar-menu .navbar-nav .nav-item.active .nav-link.active {
+        color: #1c5ad1;
+    }
+        .startbar
+        .startbar-menu
+        .navbar-nav
+        .nav-item.active
+        .nav-link.active
+        .menu-icon {
+            color: #1c5ad1;
+        }
 .startbar
   .startbar-menu
   .navbar-nav
   .nav-item.active
   .nav-link.active
   .menu-icon-bi {
-  color: #6f6af8;
+  color: #1c5ad1;
 }
 .startbar .startbar-menu .navbar-nav .nav-item .nav-link {
   position: relative;
@@ -1652,11 +1652,11 @@ hr.hr-dashed {
 .startbar .startbar-menu .navbar-nav .nav-item .nav-link:hover i {
   color: #000;
 }
-.startbar .startbar-menu .navbar-nav .nav-item .nav-link.active::before,
-.startbar .startbar-menu .navbar-nav .nav-item .nav-link:hover::before {
-  border-color: #6f6af8 !important;
-  background-color: #6f6af8 !important;
-}
+    .startbar .startbar-menu .navbar-nav .nav-item .nav-link.active::before,
+    .startbar .startbar-menu .navbar-nav .nav-item .nav-link:hover::before {
+        border-color: #1c5ad1 !important;
+        background-color: #1c5ad1 !important;
+    }
 .startbar .startbar-menu .navbar-nav .nav-item .nav-link::before {
   content: "";
   border: 2px solid transparent;

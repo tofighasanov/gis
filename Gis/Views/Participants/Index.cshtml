@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "İştirakçılar";
+}
+
+<div class="container-fluid">
+    <h1 class="h3 mb-3">İştirakçılar</h1>
+
+    <div class="card shadow-sm mb-3">
+        <div class="card-body">
+            <p class="mb-0">Burada iştirakcılar barəsində məlumat olacaq.</p>
+        </div>
+    </div>
+
+    <!-- Заготовка под таблицу (позже подключим реальные данные) -->
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-sm table-hover align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>A.S.A.</th>
+                            <th>Komanda</th>
+                            <th>Status</th>
+                            <th class="text-end">Əməlliyyat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Aysel Məmmədova</td>
+                            <td>Alpha</td>
+                            <td><span class="badge bg-success">Aktiv</span></td>
+                            <td class="text-end">
+                                <button class="btn btn-sm btn-outline-primary">Bax</button>
+                                <button class="btn btn-sm btn-outline-secondary">Dəyiş</button>
+                                <button class="btn btn-sm btn-outline-danger">Sil</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Rauf Həsənov</td>
+                            <td>Beta</td>
+                            <td><span class="badge bg-warning text-dark">Gözləyir</span></td>
+                            <td class="text-end">
+                                <button class="btn btn-sm btn-outline-primary">Bax</button>
+                                <button class="btn btn-sm btn-outline-secondary">Dəyiş</button>
+                                <button class="btn btn-sm btn-outline-danger">Sil</button>
+                            </td>
+                        </tr>
+                        <!-- позже заменим на реальный вывод из БД -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
